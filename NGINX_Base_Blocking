@@ -142,24 +142,29 @@
     "signatures": [
       {
         "name": "LDAP injection attempt (password enumeration) (Parameter)",
-        "signatureId": 200005009
+        "signatureId": 200005009,
+        "enabled": true
       },
       {
         "name": "LDAP injection attempt (UID in Distinguished Name)",
-        "signatureId": 200005008
+        "signatureId": 200005008,
+        "enabled": true
       },
       {
         "name": "LDAP injection attempt (CN in Distinguished Name)",
-        "signatureId": 200005007
+        "signatureId": 200005007,
+        "enabled": true
       },
       {
         "name": " LDAP injection attempt ( uid )",
-        "signatureId": 200005005
+        "signatureId": 200005005,
+        "enabled": true
       },
       {
         "name": "LDAP injection attempt ( uidnumber )",
-        "signatureId": 200005004
-	}
+        "signatureId": 200005004,
+        "enabled": true
+      }
     ]
   }
 }
