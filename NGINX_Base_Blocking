@@ -141,7 +141,6 @@
       {
             "alarm" : true,
             "block" : true,
-            "learn" : false,
             "name" : "HSBC",
             "signatureSet" : {
                "filter" : {
