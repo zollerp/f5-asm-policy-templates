@@ -138,6 +138,30 @@
         "alarm": true,
         "block": true
       }
+      {
+            "alarm" : true,
+            "block" : true,
+            "learn" : false,
+            "name" : "HSBC",
+            "signatureSet" : {
+               "filter" : {
+                  "accuracyFilter" : "eq",
+                  "accuracyValue" : "low",
+                  "attackType" : {
+                     "name" : "LDAP Injection"
+                  },
+                  "hasCve" : "all",
+                  "lastUpdatedFilter" : "all",
+                  "riskFilter" : "all",
+                  "riskValue" : "all",
+                  "signatureType" : "all",
+                  "tagFilter" : "all",
+                  "userDefinedFilter" : "all"
+               },
+               "name" : "HSBC",
+               "type" : "filter-based"
+            }
+      }
     ],
     "signatures": [
       {
