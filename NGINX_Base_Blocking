@@ -138,7 +138,7 @@
         "alarm": true,
         "block": true
       }
-      {
+               {
             "alarm" : true,
             "block" : true,
             "name" : "HSBC",
@@ -160,8 +160,8 @@
                "name" : "HSBC",
                "type" : "filter-based"
             }
-      }
-    ],
+         }
+      ],
     "signatures": [
       {
         "name": "LDAP injection attempt (password enumeration) (Parameter)",
