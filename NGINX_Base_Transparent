@@ -1,0 +1,142 @@
+{
+  "policy": {
+    "name": "NGINX_Base_Transparent",
+    "template": {
+      "name": "POLICY_TEMPLATE_NGINX_BASE"
+    },
+    "applicationLanguage": "utf-8",
+    "enforcementMode": "transparent",
+    "csrf-protection": {
+      "enabled": true
+    },
+    "cookies": [
+      {
+        "name": "*",
+        "type": "wildcard",
+        "enforcementType": "allow",a
+        "insertSameSiteAttribute": "lax",
+        "securedOverHttpsConnection": true
+      }
+    ],
+    "blocking-settings": {
+      "violations": [
+        {
+          "name": "VIOL_COOKIE_MODIFIED",
+          "alarm": true,
+        },
+        {
+          "name": "VIOL_CSRF",
+          "alarm": true,
+        }
+      ]
+    },
+    "signature-sets": [
+      {
+        "name": "Command Execution Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Cross Site Scripting Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Directory Indexing Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Generic Detection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Generic Detection Signatures (High/Medium Accuracy)",
+        "alarm": true
+      },
+      {
+        "name": "HTTP Response Splitting Signatures",
+        "alarm": true
+      },
+      {
+        "name": "High Accuracy Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Information Leakage Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Medium Accuracy Signatures",
+        "alarm": true
+      },
+      {
+        "name": "OS Command Injection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Other Application Attacks Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Information Leakage Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Medium Accuracy Signatures",
+        "alarm": true
+      },
+      {
+        "name": "OS Command Injection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Other Application Attacks Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Predictable Resource Location Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Remote File Include Signatures",
+        "alarm": true
+      },
+      {
+        "name": "SQL Injection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Server Side Code Injection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "Server Side Code Injection Signatures",
+        "alarm": true
+      },
+      {
+        "name": "XPath Injection Signatures",
+        "alarm": true
+      }
+    ],
+    "signatures": [
+      {
+        "name": "LDAP injection attempt (password enumeration) (Parameter)",
+        "signatureId": 200005009
+      },
+      {
+        "name": "LDAP injection attempt (UID in Distinguished Name)",
+        "signatureId": 200005008
+      },
+      {
+        "name": "LDAP injection attempt (CN in Distinguished Name)",
+        "signatureId": 200005007
+      },
+      {
+        "name": " LDAP injection attempt ( uid )",
+        "signatureId": 200005005
+      },
+      {
+        "name": "LDAP injection attempt ( uidnumber )",
+        "signatureId": 200005004
+	}
+    ]
+  }
+}
